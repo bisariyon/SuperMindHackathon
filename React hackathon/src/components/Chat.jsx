@@ -139,14 +139,14 @@ const Chat = () => {
           )}
         </div>
 
-        <div className="flex justify-center" style={{ width: "70%", margin: "0 auto" }}>
+        <div className="flex justify-center translate-y-5" style={{ width: "70%", margin: "0 auto" }}>
           <ChatSuggestions onSuggestionClick={handleSuggestionClick} />
         </div>
 
         {/* Input Area */}
         <form
           onSubmit={handleSubmit}
-          className="flex items-center justify-center p-4 bg-gray-800 shadow-lg rounded-lg mx-auto border border-gray-700"
+          className="flex items-center justify-center p-4 bg-gray-800 shadow-lg rounded-lg mx-auto border border-gray-700 translate-y-5"
           style={{
             width: "70%",
             marginBottom: "6rem",

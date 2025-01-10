@@ -2,9 +2,9 @@
 import logoImg from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({className}) => {
   return (
-    <nav className="w-full bg-[#f8f9fa] text-[#001f3f] inter-regular py-3 px-2 md:px-12 flex justify-between items-center shadow-md">
+    <nav className={`w-full bg-[#f8f9fa] text-[#001f3f] inter-regular py-3 px-2 md:px-12 flex justify-between items-center shadow-md ${className}`}>
       <div
         className="text-black font-semibold flex justify-center items-center cursor-pointer"
       >

@@ -4,9 +4,7 @@ export const ChatSuggestions = ({ onSuggestionClick }) => {
   const suggestions = [
     "Tell me the best post type for high engagement",
     "What's should I post today?",
-    "How can I increase my followers?",
     "Average likes on a reel",
-    "Tell me a good caption"
   ];
 
   return (
