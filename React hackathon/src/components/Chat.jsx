@@ -4,7 +4,7 @@ import bgImg from "../assets/bgimg4.jpeg";
 import { FaPaperPlane, FaUser, FaRobot } from "react-icons/fa";
 import { ChatSuggestions } from "./ChatSuggestions";
 import ChatSkeleton from "./ChatSkeleton";
-// import { formatBotResponse } from "../utils/textFormatter";
+import { formatBotResponse } from "../utils/textFormatter";
 
 const Chat = () => {
   const [input, setInput] = useState("");
@@ -33,7 +33,7 @@ const Chat = () => {
       const res = await axios.post("http://localhost:3000/run-flow", { inputValue: input });
       let responseText = res.data.outputs[0]?.outputs[0]?.outputs?.message?.message?.text || "No response";
 
-      // responseText = formatBotResponse(responseText);
+      responseText = formatBotResponse(responseText);
 
       const newEntry = { prompt: input, response: responseText };
       setHistory((prev) => [...prev, newEntry]);
