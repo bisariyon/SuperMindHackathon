@@ -30,7 +30,7 @@ const Chat = () => {
     setIsLoading(true);
     
     try {
-      const res = await axios.post("http://localhost:3000/run-flow", { inputValue: input });
+      const res = await axios.post("https://supermindhackathon.onrender.com/run-flow", { inputValue: input });
       let responseText = res.data.outputs[0]?.outputs[0]?.outputs?.message?.message?.text || "No response";
 
       responseText = formatBotResponse(responseText);
