@@ -4,7 +4,9 @@
   "main": "backend.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"node Backend/backend.js",
+    "build":"npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "node Backend/backend.js"
   },
   "author": "",
   "license": "ISC",
